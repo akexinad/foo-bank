@@ -9,7 +9,7 @@
     "test": "jest --collect-coverage",
     "test:watch": "jest --watchAll",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "db_create": "docker compose up -d"
+    "docker": "docker compose up -d"
   },
   "keywords": [],
   "author": "",

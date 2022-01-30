@@ -1,12 +1,14 @@
-FROM node:17
+FROM node:17.3.0
+
+ENV PORT 5000
+ENV DB_HOST 'db'
+ENV DB_USER 'codetest'
+ENV DB_NAME 'codetest'
+ENV DB_PASS '123456'
 
 WORKDIR /app
 
 COPY . .
-
-ENV DB_PORT 4321
-ENV DB_USER codetestuser
-ENV DB_PASS 123456
 
 RUN npm install
 

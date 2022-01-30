@@ -7,6 +7,8 @@ import { TransactionRequestQuery } from "../types";
 import logger from "../utils/logger";
 
 export const getAccounts = async (req: Request, res: Response) => {
+    console.log('hello');
+    
     /**
      * We could use the request to check for authorisation at this
      * level ensuring that the user is authorised to see the accounts.
